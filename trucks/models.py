@@ -11,7 +11,7 @@ class Client(models.Model):
 
 class Trucks(models.Model):
     '''Class to capture all trucks'''
-    
+    date = models.CharFied(max_length=8)
     truck_no= models.CharField(max_length=50)
     container = models.CharField(max_length=7)
     exporter = models.CharField(max_length=50, default='cleared')
